@@ -1,0 +1,7 @@
+name: Contents
+on: push # イベント（プッシュ時に起動）
+jobs: # ジョブの定義
+  print: # ジョブID
+    runs-on: ubuntu-latest # ランナー（Ubuntuで実行）
+    steps: # ステップの定義
+      - run: echo "${{ github.actor }}"
