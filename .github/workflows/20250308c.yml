@@ -6,7 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello, octcat"
-  skip-or-run-2:
     if: ${{ github.actor == 'karlley' }}
     runs-on: ubuntu-latest
     steps:
