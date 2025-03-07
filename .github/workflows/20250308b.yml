@@ -7,6 +7,7 @@ jobs:
       - run: exit 1
       - run: echo "Hello1"
       - run: exit 0
+        if: ${{ failure() }}
       - run: echo "Hello3"
         if: ${{ failure() }}
       - run: echo "Hello2"
