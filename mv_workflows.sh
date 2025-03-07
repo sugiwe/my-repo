@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Usage
+# ./mv_workflow.sh [YYYYMMDD]
+#   引数として日付を渡すと日付をファイル名の一部とするファイルを対象としてcompletedディレクトリに移動します。
+#   デフォルト値は本日の日付です。
+
 if [ $# -eq 0 ]; then
     DATE_PATTERN=$(date +"%Y%m%d")
     echo "日付が指定されていないため、本日の日付 $DATE_PATTERN を使用します。"
