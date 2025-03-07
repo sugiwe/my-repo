@@ -8,3 +8,4 @@ jobs:
       - run: echo "Hello1"
         if: ${{ failure() }}
       - run: echo "Hello2"
+        if: ${{ success() }}
