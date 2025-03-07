@@ -1,0 +1,8 @@
+name: Conditions
+on: push
+jobs:
+  skip-or-run:
+    if: ${{ github.actor == 'karlley' }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello"
