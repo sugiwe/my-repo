@@ -6,6 +6,6 @@ jobs:
     steps:
       - run: exit 1
       - run: echo "Hello1"
-      #   if: ${{ failure() }}
-      # - run: echo "Hello2"
-      #   if: ${{ success() }}
+      - run: echo "Hello2"
+        if: ${{ failure() }}
+        # if: ${{ success() }}
