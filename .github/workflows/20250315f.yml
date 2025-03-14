@@ -10,6 +10,6 @@ jobs:
       - uses: actions/checkout@v4
       - run: echo "${GITHUB_HEAD_REF}"
       - run: gh pr comment ${{ github.event.number }} --body "Hello, ${GITHUB_ACTOR}"
-      # - run: gh pr comment "${GITHUB_HEAD_REF}" --body "Hello, ${GITHUB_ACTOR}"
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # - run: gh pr comment "${GITHUB_HEAD_REF}" --body "Hello, ${GITHUB_ACTOR}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
