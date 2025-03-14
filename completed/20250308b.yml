@@ -1,0 +1,15 @@
+name: Status check function
+on: push
+jobs:
+  fail:
+    runs-on: ubuntu-latest
+    steps:
+      - run: exit 1
+      - run: echo "Hello1"
+      - run: exit 0
+        if: ${{ failure() }}
+      - run: echo "Hello3"
+        if: ${{ failure() }}
+      - run: echo "Hello2"
+        if: ${{ failure() }}
+        # if: ${{ success() }}
