@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Usage
-# ./mv_workflow.sh [YYYYMMDD]
+# ./mv_workflows.sh [YYYYMMDD]
 #   引数として日付を渡すと日付をファイル名の一部とするファイルを対象としてcompletedディレクトリに移動します。
 #   デフォルト値は本日の日付です。
 
