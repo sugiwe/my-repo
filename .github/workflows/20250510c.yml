@@ -8,5 +8,5 @@ jobs:
     steps:
       - run: echo "デバッグ"
       - run: echo "${PASSWORD}"
-      - run: ::add-mask::${PASSWORD}
+      - run: echo "::add-mask::${PASSWORD}"
       - run: echo "${PASSWORD}"
