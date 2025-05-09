@@ -7,5 +7,6 @@ jobs:
       PASSWORD: SuperSecretValue
     steps:
       - run: echo "デバッグ"
+      - run: echo "${PASSWORD}"
       - run: echo "::add-mask::${PASSWORD}"
-      # - run: echo "${PASSWORD}"
+      - run: echo "${PASSWORD}"
