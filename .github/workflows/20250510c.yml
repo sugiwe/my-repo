@@ -6,5 +6,6 @@ jobs:
     env:
       PASSWORD: SuperSecretValue
     steps:
+      - run: echo "デバッグ"
       - run: echo "::add-mask::${PASSWORD}"
       # - run: echo "${PASSWORD}"
