@@ -10,7 +10,7 @@ on:
 jobs:
   print:
     runs-on: ubuntu-latest
-    envrironment: ${{ inputs.environment-name }}
+    environment: ${{ inputs.environment-name }}
     env:
       USERNAME: ${{ vars.USERNAME }}
       PASSWORD: ${{ secrets.PASSWORD }}
